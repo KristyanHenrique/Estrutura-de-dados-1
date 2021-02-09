@@ -1,0 +1,14 @@
+from builtins import print
+import math
+def mm(n, k):
+    if n <= k:
+        print((n + math.sqrt(4 + (n ** 2))) / 2)
+        n += 1
+        mm(n, k)
+    else:
+        print('Fim')
+ 
+n = int(input('Informe de onde deseja: '))
+k = int(input('Informe o numero de chamadas: '))
+ 
+mm(n, k)
